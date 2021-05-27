@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+.center{
+    display: flex;
+    max-width: 1920px;
+    padding:0 2%;
+    margin:0 auto;
+    flex-wrap: wrap;
+}
+
+
+section.main{
+
+    background-image: url(/images/bg.svg);
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 20px 0 80px 0;
+}
+
+.menu{
+
+    display: flex;
+    width: 100%;
+}
+
+.logo-menu {
+
+    width: 50%;
+}
+
+.itens-menu{
+    width: 50%;
+    text-align: right;
+}
+
+.itens-menu a {
+
+    
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+
+}
+
+.itens-menu a:hover {
+
+    padding-bottom: 7px;
+    border-bottom: 4px solid #FFDD33;
+}
+
+.itens-menu a.contact-btn{
+
+    background-color: #0F3FD3;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.itens-menu a.contact-btn:hover{
+
+    border: 0;
+}
+
+.mockup {
+
+    display: block;
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+    color:white;
+}
+
+.mockup h1 {
+
+    font-size: 50px;
+}
+
+.mockup img {
+
+    max-width: 100%;
+}
+
+section.trends {
+    padding: 100px 0;
+}
+
+section.trends img {
+
+    width: 20%;
+    
+}
+
+section.whyus{
+    padding: 40px 0;
+    background-color: #FBFCFE;
+}
+
+#whyus-title {
+
+    font-size: 64px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#whyus-p {
+
+    font-size: 14px;
+    color:#ccc;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.diferenciais {
+
+    display: flex;
+}
+
+.box-diferenciais {
+
+    box-shadow: 0px 20px 40px #2426721C;
+    width: 33%;
+    margin-right: 2%;
+    padding: 10px 20px;
+}
+
+.box-diferenciais h3 {
+
+    font-size: 28px;
+    color: black;
+    margin:20px 0;
+}
+
+.box-diferenciais p {
+
+    font-size: 13px;
+    color: #7E92AC;
+}
+
+section.cta {
+    background-image: url(/images/BANNER\ IMG.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+    min-height: 300px;
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+    font-size: 54px;
+    font-weight: normal;
+}
+
+.cta h4 {
+    margin-bottom: 80px;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: oblique;
+}
+
+#cta-btn {
+
+    background-color: #FFDD33;
+    width: 332px;
+    height: 68px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    color:#0F3FD3;
+}
+
+#cta-btn:link {
+
+    text-decoration: none;
+}
+
+.benefits {
+
+    padding: 50px 0;
+}
+
+.benefits > .center {
+
+    align-items: center;
+    justify-content: left;
+}
+
+.benefits-title {
+    max-width: 80%;
+    margin-left: 65px;
+    font-size: 40px;
+}
+
+.benefits-list {
+    width: 60%;
+}
+
+.benefits-list p {
+
+    font-size: 14px;
+    vertical-align: middle;
+ }
+
+ .benefits-list p:first-of-type {
+
+    margin-top: 20px;
+ }
+
+
+.benefits-list img {
+   display: inline-block;
+   width: 70px;
+   vertical-align: middle;
+}
+
+ .benefits-list span {
+
+    display: inline-block;
+    width: 70%
+ }
+
+.benefits-image {
+    width: 40%;
+}
+
+.benefits-image img {
+
+    max-width: 100%;
+}
+
+.benefits a {
+
+    color: white;
+    padding:  10px 25px;
+    background-color: #255AFF;
+    border-radius: 5px;
+    margin-left: 65px;
+    font-size: 14px;
+}
+
+
+.benefits a:link {
+    color: white;
+    text-decoration: none;
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .diferenciais {
+        flex-wrap: wrap;
+    }
+    .box-diferenciais {
+
+        width: 100%;
+        margin-right: 0;
+    }
+
+  #witchful {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section.trends img {
+    
+        width: 100%;
+        max-width: 400px;
+        
+    }
+
+    .cta h4 {
+
+        margin-bottom: 40px;
+    }
+
+    .benefits-list {
+        width: 90%;
+        align-items: center;
+    }
+
+    .benefits-title {
+        margin-bottom: 40px;
+        left: 10%;
+    }
+
+    .benefits .center {
+        flex-direction: column;
+    }
+
+    .benefits-image {
+        width: 100%;
+        padding: 40px 0;
+    }
+
+   .benefits a {
+        margin-left: 80px;
+   }
+}
